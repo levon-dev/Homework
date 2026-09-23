@@ -1,0 +1,23 @@
+Запуск:
+1. pip install flask
+2. python main.py
+http://127.0.0.1:5000
+Примеры запросов (JSON в теле):
+- Проверка
+   Метод: GET
+   URL: /ping
+- Создать пост
+   Метод: POST
+   URL: /twit
+   Тело: {"body":"Hello","author":"@me"}
+- Прочитать все посты
+   Метод: GET
+   URL: /twit
+- Обновить пост
+   Метод: POST
+   URL: /twit/update
+   Тело: {"index":0,"body":"Новый текст","author":"@new"}
+- Удалить пост
+   Метод: POST
+   URL: /twit/delete
+   Тело: {"index":0}
